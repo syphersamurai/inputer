@@ -3,7 +3,7 @@
 
 **Inputer** Let you Easily convert text between different letter cases: lower case, UPPER CASE, Sentence Case.
 
-![Inputer Gif](https://syphersamurai.github.io/inputer/images/Screenshot/inputer.gif)
+![Inputer Gif](https://syphersamurai.github.io/inputer/images/Screenshots/inputer.gif)
 
 
 
