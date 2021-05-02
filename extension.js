@@ -1,5 +1,4 @@
-
-const vscode = require('vscode')
+const vscode = require("vscode");
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 
@@ -39,7 +38,6 @@ function activate(context) {
       editor.edit((edit) => {
         edit.replace(editor.selection, toUpperCase);
       });
-
     })
   );
   context.subscriptions.push(
@@ -66,6 +64,28 @@ function activate(context) {
       let toCapitalizedCase = CapitalizedCaseFunction(text);
       editor.edit((edit) => {
         edit.replace(editor.selection, toCapitalizedCase);
+      });
+    })
+  );
+  context.subscriptions.push(
+    vscode.commands.registerCommand("inputer.replaceWithDash", async () => {
+      const editor = vscode.window.activeTextEditor;
+      if (!editor) {
+        vscode.window.showErrorMessage("editor does not exist!");
+        return;
+      }
+
+      const text = editor.document.getText(editor.selection);
+
+      function replaceWithDashFunction(str) {
+        let strLowerCase = str.toLowerCase();
+        let replaceWithDash = strLowerCase.replace(/\s/g, "-");
+        return replaceWithDash;
+      }
+
+      let replaceWithDash = replaceWithDashFunction(text);
+      editor.edit((edit) => {
+        edit.replace(editor.selection, replaceWithDash);
       });
     })
   );

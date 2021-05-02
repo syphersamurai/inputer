@@ -29,7 +29,7 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:inputer.helloWorld"
+		"*"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -48,23 +48,33 @@
 				"command": "inputer.toLowerCase",
 				"title": "Inputer * LowerCase",
 				"category": "Inputer"
+			},
+			{
+				"command": "inputer.replaceWithDash",
+				"title": "Inputer * Replace Space With Dash",
+				"category": "Inputer"
 			}
 		],
 		"keybindings": [
 			{
 				"command": "inputer.toUpperCase",
 				"key": "alt+I alt+U",
-				"mac": "cmd+L cmd+C"
+				"mac": "cmd+I cmd+U"
 			},
 			{
 				"command": "inputer.toLowerCase",
 				"key": "alt+I alt+L",
-				"mac": "cmd+L cmd+C"
+				"mac": "cmd+I cmd+L"
 			},
 			{
 				"command": "inputer.toSentenceCase",
 				"key": "alt+I alt+S",
-				"mac": "cmd+L cmd+C"
+				"mac": "cmd+I cmd+S"
+			},
+			{
+				"command": "inputer.replaceWithDash",
+				"key": "alt+I alt+-",
+				"mac": "cmd+I cmd+-"
 			}
 		],
 		"menus": {
@@ -79,6 +89,10 @@
 				},
 				{
 					"command": "inputer.toSentenceCase",
+					"group": "myGrp@inputer"
+				},
+				{
+					"command": "inputer.replaceWithDash",
 					"group": "myGrp@inputer"
 				}
 			]
