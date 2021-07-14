@@ -53,6 +53,11 @@
 				"command": "inputer.replaceWithDash",
 				"title": "Inputer * Replace Space With Dash",
 				"category": "Inputer"
+			},
+			{
+				"command": "inputer.toCamelCaseTag",
+				"title": "Inputer * Replace Word With CamelCase Tag",
+				"category": "Inputer"
 			}
 		],
 		"keybindings": [
@@ -75,6 +80,11 @@
 				"command": "inputer.replaceWithDash",
 				"key": "alt+I alt+-",
 				"mac": "cmd+I cmd+-"
+			},
+			{
+				"command": "inputer.toCamelCaseTag",
+				"key": "ctrl+I ctrl+T",
+				"mac": "cmd+I cmd+T"
 			}
 		],
 		"menus": {
@@ -93,6 +103,10 @@
 				},
 				{
 					"command": "inputer.replaceWithDash",
+					"group": "myGrp@inputer"
+				},
+				{
+					"command": "inputer.toCamelCaseTag",
 					"group": "myGrp@inputer"
 				}
 			]

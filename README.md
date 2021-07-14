@@ -8,6 +8,7 @@
 - `inputer: LOWER CASE` => transforms any text to lowercase case.
 - `inputer: SENTENCE CASE` => transforms any text to sentence case.
 - `inputer: REPLACE SPACE WITH DASH` => transforms spaces in any text to dashes.
+- `inputer: REPLACE WORD WITH CAMELCASE TAG` => transforms word in CamelCase tag.
 
 ### Keyboard Shortcuts
 
@@ -15,6 +16,8 @@
 - `inputer: LOWER CASE` => (<kbd>ALT</kbd> + <kbd>I</kbd> , <kbd>ALT</kbd> <kbd>L</kbd>).
 - `inputer: SENTENCE CASE` => (<kbd>ALT</kbd> + <kbd>I</kbd> , <kbd>ALT</kbd> <kbd>S</kbd>).
 - `inputer: REPLACE SPACE WITH DASH` => (<kbd>ALT</kbd> + <kbd>I</kbd> , <kbd>ALT</kbd> <kbd>-</kbd>).
+- `inputer: REPLACE SPACE WITH DASH` => (<kbd>ALT</kbd> + <kbd>I</kbd> , <kbd>ALT</kbd> <kbd>-</kbd>).
+- `inputer: REPLACE WORD WITH CAMELCASE TAG` => (<kbd>CTRL</kbd> + <kbd>I</kbd> , <kbd>CTRL</kbd> <kbd>T</kbd>).
 
 ### For more information
 

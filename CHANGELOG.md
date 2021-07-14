@@ -1,9 +1,7 @@
-# Change Log
 
-All notable changes to the "inputer" extension will be documented in this file.
+14/07/2021
+* added inputer: REPLACE WORD WITH CAMELCASE TAG
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
-
+21/01/2021, 15:02:08
 - Initial release

@@ -50,20 +50,17 @@ function activate(context) {
 
       const text = editor.document.getText(editor.selection);
 
-      function CapitalizedCaseFunction(str) {
+      function SentenceCaseFunction(str) {
         var splitStr = str.toLowerCase().split(" ");
         for (var i = 0; i < splitStr.length; i++) {
-          // You do not need to check if i is larger than splitStr length, as your for does that for you
-          // Assign it back to the array
           splitStr[i] =
             splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
         }
-        // Directly return the joined string
         return splitStr.join(" ");
       }
-      let toCapitalizedCase = CapitalizedCaseFunction(text);
+      let toSentenceCase = SentenceCaseFunction(text);
       editor.edit((edit) => {
-        edit.replace(editor.selection, toCapitalizedCase);
+        edit.replace(editor.selection, toSentenceCase);
       });
     })
   );
@@ -86,6 +83,42 @@ function activate(context) {
       let replaceWithDash = replaceWithDashFunction(text);
       editor.edit((edit) => {
         edit.replace(editor.selection, replaceWithDash);
+      });
+    })
+  );
+
+  context.subscriptions.push(
+    vscode.commands.registerCommand("inputer.toCamelCaseTag", async () => {
+      const editor = vscode.window.activeTextEditor;
+      if (!editor) {
+        vscode.window.showErrorMessage("editor does not exist!");
+        return;
+      }
+      const text = editor.document.getText(editor.selection);
+
+      function processText(text) {
+        let result;
+        let splitStr = text.toLowerCase().split(" ");
+        for (var i = 0; i < splitStr.length; i++) {
+          splitStr[i] =
+            splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+        }
+        result = splitStr.join(" ")
+        return result
+      }
+
+      function toCamelCaseTagFunction(text) {
+        let result;
+        let pw = processText(text);
+        let nextPw = `${pw.charAt(0).toLowerCase()} ${pw.substr(1)}`
+        let processed = nextPw.replace(/\s/g, '')
+        result = `<${processed}>`;
+        return result;
+      }
+
+      let toCamelCaseTag = toCamelCaseTagFunction(text);
+      editor.edit((edit) => {
+        edit.replace(editor.selection, toCamelCaseTag);
       });
     })
   );
