@@ -55,6 +55,11 @@
 				"category": "Inputer"
 			},
 			{
+				"command": "inputer.replaceWithSpaces",
+				"title": "Inputer * Replace Dashes With Spaces",
+				"category": "Inputer"
+			},
+			{
 				"command": "inputer.toCamelCaseTag",
 				"title": "Inputer * Replace Word With CamelCase Tag",
 				"category": "Inputer"
@@ -104,6 +109,10 @@
 				{
 					"command": "inputer.replaceWithDash",
 					"group": "myGrp@inputer"
+				},
+				{
+					"command": "inputer.replaceWithSpaces",
+					"category": "myGrp@inputer"
 				},
 				{
 					"command": "inputer.toCamelCaseTag",

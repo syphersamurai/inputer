@@ -59,6 +59,7 @@ function activate(context) {
         return splitStr.join(" ");
       }
       let toSentenceCase = SentenceCaseFunction(text);
+      
       editor.edit((edit) => {
         edit.replace(editor.selection, toSentenceCase);
       });
@@ -75,8 +76,7 @@ function activate(context) {
       const text = editor.document.getText(editor.selection);
 
       function replaceWithDashFunction(str) {
-        let strLowerCase = str.toLowerCase();
-        let replaceWithDash = strLowerCase.replace(/\s/g, "-");
+        let replaceWithDash = str.replace(/\s/g, "-");
         return replaceWithDash;
       }
 
@@ -86,7 +86,28 @@ function activate(context) {
       });
     })
   );
+  context.subscriptions.push(
+    vscode.commands.registerCommand("inputer.replaceWithSpaces", async () => {
+      const editor = vscode.window.activeTextEditor;
+      if (!editor) {
+        vscode.window.showErrorMessage("editor does not exist!");
+        return;
+      }
 
+      const text = editor.document.getText(editor.selection);
+
+      function replaceWithSpaceFunction(str) {
+        let replaceWithSpace = str.replace(/-/g, " ");
+
+        return replaceWithSpace;
+      }
+
+      let replaceWithSpace = replaceWithSpaceFunction(text);
+      editor.edit((edit) => {
+        edit.replace(editor.selection, replaceWithSpace);
+      });
+    })
+  );
   context.subscriptions.push(
     vscode.commands.registerCommand("inputer.toCamelCaseTag", async () => {
       const editor = vscode.window.activeTextEditor;

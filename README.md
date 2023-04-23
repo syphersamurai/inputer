@@ -10,6 +10,7 @@ https://marketplace.visualstudio.com/items?itemName=syphersamurai.inputer
 - `inputer: LOWER CASE` => transforms any text to lowercase case.
 - `inputer: SENTENCE CASE` => transforms any text to sentence case.
 - `inputer: REPLACE SPACE WITH DASH` => transforms spaces in any text to dashes.
+- `inputer: REPLACE DASHES WITH SPACES` => transforms word in CamelCase tag.
 - `inputer: REPLACE WORD WITH CAMELCASE TAG` => transforms word in CamelCase tag.
 
 ### Keyboard Shortcuts
