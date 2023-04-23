@@ -18,7 +18,6 @@ https://marketplace.visualstudio.com/items?itemName=syphersamurai.inputer
 - `inputer: LOWER CASE` => (<kbd>ALT</kbd> + <kbd>I</kbd> , <kbd>ALT</kbd> <kbd>L</kbd>).
 - `inputer: SENTENCE CASE` => (<kbd>ALT</kbd> + <kbd>I</kbd> , <kbd>ALT</kbd> <kbd>S</kbd>).
 - `inputer: REPLACE SPACE WITH DASH` => (<kbd>ALT</kbd> + <kbd>I</kbd> , <kbd>ALT</kbd> <kbd>-</kbd>).
-- `inputer: REPLACE SPACE WITH DASH` => (<kbd>ALT</kbd> + <kbd>I</kbd> , <kbd>ALT</kbd> <kbd>-</kbd>).
 - `inputer: REPLACE WORD WITH CAMELCASE TAG` => (<kbd>CTRL</kbd> + <kbd>I</kbd> , <kbd>CTRL</kbd> <kbd>T</kbd>).
 
 ### For more information
