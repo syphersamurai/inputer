@@ -10,7 +10,7 @@
 		"name": "syphersamurai"
 	},
 	"description": "vscode extension for transforming text cases",
-	"version": "0.0.5",
+	"version": "0.0.10",
 	"engines": {
 		"vscode": "^1.54.0"
 	},
@@ -123,7 +123,8 @@
 	},
 	"scripts": {
 		"lint": "eslint .",
-		"pretest": "yarn run lint",
+		"pretest": "pnpm run lint",
+		"package ": "vsce package", 
 		"test": "node ./test/runTest.js"
 	},
 	"devDependencies": {
