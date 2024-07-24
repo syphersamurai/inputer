@@ -1,9 +1,12 @@
-# Inputer
+<h1 align="center">Inputer</h1>
 
-**Inputer** Let you Easily convert text between different letter cases: lower case, UPPER CASE, Sentence Case, turn Spaces to Dashes.
-https://marketplace.visualstudio.com/items?itemName=syphersamurai.inputer
 
-![Inputer Gif](https://syphersamurai.github.io/inputer/images/Screenshots/inputer.gif)
+<p align="center">
+Easily convert text between different letter cases: lower case, UPPER CASE, Sentence Case, turn Spaces to Dashes.
+</p>
+
+  
+<a href="https://marketplace.visualstudio.com/items?itemName=syphersamurai.inputer" target="_blank"><img src="https://syphersamurai.github.io/inputer/images/Screenshots/inputer.gif" alt="Inputer Gif"></a>
 
 
 - `inputer: UPPER CASE` => transforms any text to uppercase case.
